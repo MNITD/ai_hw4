@@ -1,0 +1,22 @@
+Explanation to the problem 1 (The mutilated chessboard)
+
+The puzzle is impossible to complete, because of two same colored squares have been removed. (see https://en.wikipedia.org/wiki/Mutilated_chessboard_problem#Solution)
+
+But the task was to formalize and report the factor graph. 
+
+__Variables__
+
+The varibales (or vertexes) will be every chessboard squares. And its value will be other associated square. The variable play role of pointer to  other associated square. 
+
+__Domains__
+
+The domain of each variable will be possiable free associated (neighbourhood) squares. Free means that associated square doesn't have value (doesn't point to any square)
+
+__Constraints__
+
+The only constraints is that the amount of free associated squares for every current square were at least 1.
+
+__Recomandations__ 
+
+I recomand assign value of free square, when some other square point to it. 
+
